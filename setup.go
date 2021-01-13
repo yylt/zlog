@@ -1,7 +1,6 @@
 package zlog
 
 import (
-	"go.uber.org/zap/zapcore"
 	"os"
 	"strings"
 
@@ -12,6 +11,7 @@ import (
 	"github.com/coredns/coredns/plugin/pkg/response"
 	"github.com/miekg/dns"
 	"go.uber.org/zap"
+	"go.uber.org/zap/zapcore"
 )
 
 const (

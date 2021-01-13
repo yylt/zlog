@@ -1,9 +1,8 @@
-// Package log implements basic but useful request (access) logging plugin.
+// Package zlog implements logging plugin.
 package zlog
 
 import (
 	"context"
-	"go.uber.org/zap"
 	"time"
 
 	"github.com/coredns/coredns/plugin"
@@ -12,8 +11,8 @@ import (
 	"github.com/coredns/coredns/plugin/pkg/replacer"
 	"github.com/coredns/coredns/plugin/pkg/response"
 	"github.com/coredns/coredns/request"
-
 	"github.com/miekg/dns"
+	"go.uber.org/zap"
 )
 
 // Logger is a basic request logging plugin.
